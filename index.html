@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Games and apps from BigT All IT. Discover Brick Sprout, a thoughtful garden block puzzle with 350 gardens and Endless Garden.">
+  <meta name="theme-color" content="#244c37">
+  <title>BigT All IT · Games &amp; apps</title>
+  <style>
+    :root { color-scheme: light; --ink:#244c37; --muted:#647565; --paper:#f5f0e3; --line:#d4dfc9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(ellipse at 8% 0%,#e4edda 0,transparent 55%),var(--paper); color:var(--ink); font:17px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .page { width:min(100% - 40px,960px); margin:0 auto; padding:64px 0 32px; }
+    .eyebrow { margin:0 0 9px; color:var(--muted); font-size:12px; font-weight:750; letter-spacing:.18em; text-transform:uppercase; }
+    h1,h2 { margin:0; font-family:Georgia,"Times New Roman",serif; line-height:1.08; letter-spacing:-.035em; }
+    h1 { font-size:clamp(40px,7vw,64px); }
+    .intro { max-width:620px; margin:16px 0 36px; color:var(--muted); font-size:20px; }
+    .game { display:grid; grid-template-columns:164px minmax(0,1fr); gap:32px; align-items:start; padding:34px; border:1px solid var(--line); border-radius:28px; background:#fffdf4; box-shadow:0 16px 48px #25462c0c; }
+    .icon { display:block; width:164px; height:164px; border-radius:30px; }
+    h2 { font-size:clamp(34px,6vw,48px); }
+    .description { max-width:580px; margin:17px 0 24px; }
+    .links { display:flex; gap:12px; flex-wrap:wrap; }
+    a { color:inherit; text-underline-offset:4px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:11px 20px; border:1px solid var(--line); border-radius:13px; text-decoration:none; font-weight:700; background:#f1f5e9; }
+    .button.primary { border-color:var(--ink); background:var(--ink); color:#fffdf4; }
+    a:focus-visible { outline:3px solid #bd8e2e; outline-offset:4px; }
+    .button:hover { filter:brightness(.96); }
+    footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:14px 24px; margin-top:30px; color:var(--muted); font-size:14px; }
+    footer p { margin:0; }
+    footer a { display:inline-block; padding:6px 0; }
+    @media(max-width:580px) {
+      .page { width:calc(100% - 32px); padding-top:38px; }
+      .intro { font-size:18px; margin-bottom:27px; }
+      .game { grid-template-columns:1fr; gap:22px; padding:24px; border-radius:24px; }
+      .icon { width:112px; height:112px; border-radius:23px; }
+      .description { margin-top:15px; }
+      footer { display:block; }
+      footer p + p { margin-top:9px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">Games &amp; apps</p>
+      <h1>BigT All IT</h1>
+      <p class="intro">Thoughtful games. A little room to grow.</p>
+    </header>
+    <article class="game" aria-labelledby="brick-sprout-title">
+      <img class="icon" src="./app-icon.png" width="164" height="164" alt="A daisy growing from a sunlit brick garden bed">
+      <div>
+        <p class="eyebrow">Garden block puzzle</p>
+        <h2 id="brick-sprout-title">Brick Sprout</h2>
+        <p class="description">Plant a little strategy. Discover 350 garden puzzles across 19 biomes, or find your flow in Endless Garden. Make room for flowers, herbs, trees and a world in bloom.</p>
+        <nav class="links" aria-label="Brick Sprout information">
+          <a class="button primary" href="https://bigtvz.github.io/brick-sprout-privacy/home.html">Explore the game</a>
+          <a class="button" href="https://bigtvz.github.io/brick-sprout-privacy/">Privacy policy</a>
+        </nav>
+      </div>
+    </article>
+    <footer>
+      <p>Support: <a href="mailto:bigtallit.dev@gmail.com">bigtallit.dev@gmail.com</a></p>
+      <p><a href="./app-ads.txt">Authorized advertising sellers</a></p>
+    </footer>
+  </main>
+</body>
+</html>
